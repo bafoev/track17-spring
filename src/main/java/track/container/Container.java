@@ -1,10 +1,5 @@
 package track.container;
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.HashMap;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
@@ -22,9 +17,14 @@ public class Container {
     private Map<String, Bean> beanId;
     private Map<String, Bean> beanClassName;
 
+    Map<String, Object> map = new HashMap<>();
 
     // Реализуйте этот конструктор, используется в тестах!
-    public Container(List<Bean> beans) {
+    public Container(List<Bean> beans) throws Exception {
+
+    }
+
+    public static void main(String[] args) throws Exception {
 
         objId = new HashMap<>();
         objByClassName = new HashMap<>();
