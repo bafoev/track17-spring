@@ -25,6 +25,11 @@ public class Bean {
         this.properties = properties;
     }
 
+    public Bean() {
+
+
+    }
+
     public Map<String, Property> getProperties() {
         return properties;
     }

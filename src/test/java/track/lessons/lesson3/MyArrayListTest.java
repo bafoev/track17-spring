@@ -4,12 +4,14 @@ import java.util.NoSuchElementException;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Ignore;
 
 /**
  *
  */
 public class MyArrayListTest {
 
+    @Ignore
     @Test
     public void testResize1() {
         MyArrayList list = new MyArrayList(0);
@@ -19,7 +21,7 @@ public class MyArrayListTest {
 
         Assert.assertTrue(list.size() == 1000);
     }
-
+    @Ignore
     @Test
     public void testResize2() {
         MyArrayList list = new MyArrayList(0);
@@ -34,6 +36,7 @@ public class MyArrayListTest {
 
     }
 
+    @Ignore
     @Test(expected = NoSuchElementException.class)
     public void emptyList() throws Exception {
         List list = new MyArrayList();
@@ -41,6 +44,7 @@ public class MyArrayListTest {
         list.get(0);
     }
 
+    @Ignore
     @Test
     public void listAdd() throws Exception {
         List list = new MyArrayList();
@@ -49,6 +53,7 @@ public class MyArrayListTest {
         Assert.assertTrue(list.size() == 1);
     }
 
+    @Ignore
     @Test
     public void listAddRemove() throws Exception {
         List list = new MyArrayList();
@@ -72,6 +77,7 @@ public class MyArrayListTest {
         Assert.assertTrue(list.size() == 0);
     }
 
+    @Ignore
     @Test
     public void listRemove() throws Exception {
         List list = new MyArrayList();
