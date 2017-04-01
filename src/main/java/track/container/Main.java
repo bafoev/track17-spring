@@ -23,8 +23,8 @@ public class Main {
 
 
             Container container = new Container(beans);
-            Car car = null;
-            Gear gear = null;
+            Car car ;
+            Gear gear ;
             gear = (Gear) container.getByid("gearBean");
             System.out.println(gear.toString());
             car = (Car) container.getByClass("track.container.beans.Car");

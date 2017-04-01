@@ -1,11 +1,16 @@
 package track.container;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
 import track.container.config.Bean;
 import track.container.config.Property;
 import track.container.config.ValueType;
+
 
 /**
  * Основной класс контейнера
@@ -17,14 +22,8 @@ public class Container {
     private Map<String, Bean> beanId;
     private Map<String, Bean> beanClassName;
 
-    Map<String, Object> map = new HashMap<>();
 
-    // Реализуйте этот конструктор, используется в тестах!
-    public Container(List<Bean> beans) throws Exception {
-
-    }
-
-    public static void main(String[] args) throws Exception {
+    public Container(List<Bean> beans) {
 
         objId = new HashMap<>();
         objByClassName = new HashMap<>();
